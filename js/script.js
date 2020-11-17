@@ -8,7 +8,9 @@ for (var i = 0; i < 100 + 1; i++) {
   numeri.push(i);
   console.log(numeri[i]);
 
-  if(i % 3 == 0 ) {
-    numeri[i] = "Fizz";
+  if(numeri[i] % 3 == 0 ) {
+    console.log(numeri[i] + "Fizz");
+  } else if (numeri[i] % 5 == 0 ) {
+    console.log(numeri[i] + "Buzz");
   }
 }
